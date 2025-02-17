@@ -34,20 +34,10 @@ const languages = [
 ];
 
 //componente
-export default function AccordionsList() {
-    function renderAccordion() {
-        return languages.map(language => {
-            return <Accordion
-                key={language.id}
-                titolo={language.title}
-                contenuto={language.description}
+export default function AccordionsList({ selectedLanguage }) {
+    const selectedLangData = languages.find(lang => lang.title === selectedLanguage);
 
-            />
-        });
-    }
-    return (
-
-        <Accordion />
-
-    )
+    return selectedLangData ? (
+        <Accordion titolo={selectedLangData.title} contenuto={selectedLangData.description} />
+    ) : null;
 }
