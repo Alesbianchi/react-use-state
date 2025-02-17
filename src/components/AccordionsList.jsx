@@ -35,9 +35,19 @@ const languages = [
 
 //componente
 export default function AccordionsList() {
+    function renderAccordion() {
+        return languages.map(language => {
+            return <Accordion
+                key={language.id}
+                titolo={language.title}
+                contenuto={language.description}
+
+            />
+        });
+    }
     return (
-        <div className="accordion-list">
-            <Accordion />
-        </div>
+
+        <Accordion />
+
     )
 }

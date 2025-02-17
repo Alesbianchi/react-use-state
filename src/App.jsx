@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-      <button type="button" className="btn btn-primary">html </button>
-      <button type="button" className="btn btn-secondary">css</button>
-      <button type="button" className="btn btn-success">Javascript</button>
-      <button type="button" className="btn btn-danger">Node.js</button>
-      <button type="button" className="btn btn-warning">Reactjs</button>
-      <button type="button" className="btn btn-info">express</button>
+      <button type="button" className="btn  m-3">html </button>
+      <button type="button" className="btn  m-3">css</button>
+      <button type="button" className="btn  m-3">Javascript</button>
+      <button type="button" className="btn m-3">Node.js</button>
+      <button type="button" className="btn m-3">Reactjs</button>
+      <button type="button" className="btn m-3">express</button>
 
       <AccordionsList />
     </>
